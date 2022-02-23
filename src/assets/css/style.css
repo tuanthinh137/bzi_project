@@ -1,0 +1,209 @@
+:root {
+  --c-black: #000000;
+  --c-white: #FFFFFF;
+
+  --c-red: #FF3B3B;
+  --c-light-red-1: #FF5A73;
+
+  --c-blue: #2B79F7;
+  --c-light-blue-1: #8F90A6;
+  --c-dark-blue-1: #28293D;
+
+  --c-green: #06C270;
+  --c-light-green-1: #E3FFF1;
+
+  --c-light-black-1: #323232;
+
+  --c-light-gray-1: #F5F6FA;
+  --c-light-gray-2: #C7C9D9;
+  --c-light-gray-3: #E5E5E5;
+  --c-light-gray-4: #FFE5E5;
+  --c-light-gray-5: #F6F8FC;
+
+  --c-red-gradient-01: rgba(236, 34, 35, 0.1);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: var(--fw-regular);
+  margin: 0;
+}
+
+.f { display: flex }
+.fw { flex-wrap: wrap }
+.ais { align-items: flex-start }
+.aie { align-items: flex-end }
+.aic { align-items: center }
+.aib { align-items: baseline }
+.jcs { justify-content: flex-start }
+.jce { justify-content: flex-end }
+.jcc { justify-content: center }
+.jcb { justify-content: space-between }
+.fa {
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+.ff { flex-shrink: 0 }
+.fdc { flex-direction: column; }
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.container--full {
+  max-width: 100%;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-spacing: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 144px;
+  height: 37px;
+  color: var(--c-red);
+  background: var(--c-light-gray-4);
+  padding: 10px 16px;
+  border: 1px solid var(--c-light-gray-4);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+  line-height: 21px;
+}
+
+.button--success {
+  color: var(--c-green);
+  background: var(--c-light-green-1);
+  border-color: var(--c-light-green-1);
+}
+
+.button--icon {
+  min-width: 103px;
+  height: 32px;
+  padding: 0;
+  background: var(--c-white);
+}
+
+.button--icon svg {
+  margin-right: 8px;
+}
+
+input,
+input:focus {
+  padding: 14px 16px;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.form__label--checkbox {
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  margin-bottom: 0;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.form__label--checkbox:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: 1px solid var(--c-light-blue-1);
+  border-radius: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+}
+
+.form__label--checkbox:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 4px;
+  display: none;
+  width: 12px;
+  height: 13px;
+  background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22m173.898%20439.404-166.4-166.4c-9.997-9.997-9.997-26.206%200-36.204l36.203-36.204c9.997-9.998%2026.207-9.998%2036.204%200L192%20312.69%20432.095%2072.596c9.997-9.997%2026.207-9.997%2036.204%200l36.203%2036.204c9.997%209.997%209.997%2026.206%200%2036.204l-294.4%20294.401c-9.998%209.997-26.207%209.997-36.204-.001z%22%2F%3E%3C%2Fsvg%3E") no-repeat center;
+}
+
+input[type="checkbox"]:checked + *:before {
+  border-color: var(--c-blue);
+  background: var(--c-blue);
+}
+
+input[type="checkbox"]:checked + *:after {
+  display: block;
+}
+
+.icon--account {
+  margin-right: 7px;
+}
+
+.icon--arrow {
+  margin-left: 14px;
+}
+
+.main {
+  background: var(--c-light-gray-5);
+}
+
+@media (max-width: 1023px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: calc(100% - 253px);
+  }
+}
+
+.label {
+  color: var(--c-blue);
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+  line-height: 21px;
+}
+
+.message {
+  margin-top: 6px;
+  color: var(--c-red);
+}

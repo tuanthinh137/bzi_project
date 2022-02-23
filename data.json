@@ -1,0 +1,52 @@
+{
+  "stores": [
+    {
+      "id": "#SKU1",
+      "name": "Nạp tiền vào ví",
+      "name_handle": "nap tien vao vi",
+      "date": "Sản phẩm có sẵn",
+      "price": "135.000 VNĐ",
+      "status": true
+    },
+    {
+      "id": "#SKU2",
+      "name": "Mua hàng",
+      "name_handle": "mua hang",
+      "date": "Sản phẩm có sẵn",
+      "price": "100.000 VNĐ",
+      "status": true
+    },
+    {
+      "id": "#SKU3",
+      "name": "Thanh toán thẻ",
+      "name_handle": "thanh toan the",
+      "date": "Sản phẩm có sẵn",
+      "price": "135.000 VNĐ",
+      "status": false
+    },
+    {
+      "id": "#SKU4",
+      "name": "Chuyển tiền",
+      "name_handle": "chuuyen tien",
+      "date": "Sản phẩm có sẵn",
+      "price": "95.000 VNĐ",
+      "status": true
+    },
+    {
+      "id": "#SKU5",
+      "name": "Nạp tiền vào ví",
+      "name_handle": "nap tien vao vi",
+      "date": "Sản phẩm có sẵn",
+      "price": "200.000 VNĐ",
+      "status": false
+    },
+    {
+      "id": "#SKU6",
+      "name": "Nạp thẻ",
+      "name_handle": "nap the",
+      "date": "Sản phẩm có sẵn",
+      "price": "50.000 VNĐ",
+      "status": true
+    }
+  ]
+}
